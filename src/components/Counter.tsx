@@ -1,3 +1,4 @@
+import React from "react";
 import { useState } from "react";
 
 const Counter = () => {
@@ -5,11 +6,17 @@ const Counter = () => {
 
   return (
     <div>
-      <button className="text-3xl" onClick={() => setCounter(counter + 1)}>
+      <button
+        className="text-4xl bg-amber-300"
+        onClick={() => setCounter(counter + 1)}
+      >
         +
       </button>
 
-      <button className="text-3xl" onClick={() => setCounter(counter - 1)}>
+      <button
+        className="text-4xl bg-amber-300"
+        onClick={async () => setCounter(counter - 1)}
+      >
         -
       </button>
       <h2>{counter}</h2>

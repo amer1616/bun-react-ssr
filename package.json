@@ -3,22 +3,20 @@
   "module": "index.tsx",
   "type": "module",
   "scripts": {
-    "tw": "tailwindcss -i ./src/index.css -o ./src/public/tailwind.css",
     "start": "bun run ./src/index.tsx",
-    "dev": "bun run tw && bun --hot run ./src/index.tsx"
+    "dev": "bun --hot run ./src/index.tsx"
   },
   "devDependencies": {
-    "@types/react-dom": "^18.2.14",
     "@types/react": "^18.2.33",
+    "@types/react-dom": "^18.2.14",
     "bun-types": "latest",
-    "tailwindcss": "^3.3.5",
-    "autoprefixer": "latest",
-    "postcss": "^8.4.31"
+    "tailwindcss": "^3.3.5"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "@elysiajs/static": "^0.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }

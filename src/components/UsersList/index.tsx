@@ -1,3 +1,5 @@
+import React from "react";
+
 type User = {
   id: number;
   name: string;
